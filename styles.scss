@@ -16,9 +16,11 @@ body {
   font-size: 18px;
   font-family: $font;
   background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
 }
 
 .profileBox {
+  position: absolute;
   .header {
     height: 15vh;
     width: 20vw;
@@ -40,7 +42,7 @@ body {
       border-style: solid;
       position: absolute;
       bottom: 50%;
-      left: 47%;
+      left: 38%;
     }
   }
   .profileFooter {
@@ -74,6 +76,7 @@ body {
     text-align: center;
     margin-top: 1vh;
     font-weight: $lightFont;
+    color: $lightHeadings;
   }
 }
 /* Name Age */
@@ -94,6 +97,37 @@ body {
       font-size: 1em;
       color: $lightHeadings;
       font-weight: $lightFont;
+    }
+  }
+}
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 15px;
+  }
+  .profileBox {
+    width: 35vw;
+
+    .profileBody {
+      width: 35vw;
+      display: flex;
+      justify-content: center;
+    }
+    .header {
+      width: 35vw;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profileBody {
+    position: relative;
+    img {
+      position: absolute;
     }
   }
 }

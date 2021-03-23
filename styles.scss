@@ -128,6 +128,68 @@ body {
     position: relative;
     img {
       position: absolute;
+      margin-left: -15px;
+      margin-bottom: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profileBox {
+    width: 60vw;
+
+    .profileBody {
+      width: 60vw;
+    }
+
+    .header {
+      width: 28.9vh;
+    }
+    img {
+      height: 10vh;
+      margin-bottom: 40px;
+      margin-left: -10px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .profileBox {
+    width: 60vw;
+
+    .profileBody {
+      width: 60vw;
+    }
+
+    .header {
+      width: 25.5vh;
+    }
+    img {
+      height: 8vh;
+      margin-bottom: 40px;
+      margin-left: -5px;
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .profileBox {
+    width: 60vw;
+
+    .profileBody {
+      width: 60vw;
+    }
+
+    .header {
+      width: 21.8vh;
+    }
+    img {
+      height: 8vh;
+      margin-bottom: 40px;
+      margin-left: -5px;
+    }
+  }
+  .followers,
+  .likes,
+  .photos {
+    font-size: 11px;
   }
 }
